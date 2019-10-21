@@ -1,0 +1,123 @@
+%%
+%document setup
+\documentclass[12pt, twoside, openright]{report}
+%
+%%
+
+\usepackage[final]{pdfpages}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage{amsmath,amssymb,amsfonts}
+
+%%
+%packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption, subcaption}
+\usepackage{afterpage}
+\usepackage{times}
+\usepackage{cite}
+\newcommand\aftercontents{%
+	\null
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\newpage}
+%
+%%
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+%%
+%Set margins
+\usepackage{geometry}
+\geometry{a4paper, inner = 40mm, outer = 25mm, top = 35mm, bottom = 35mm}
+%\hyphenpenalty= 10000000
+
+%
+%%
+\usepackage{titlesec}
+
+\titleformat{\chapter}[hang]
+{\normalfont\fontsize{12}{0}\bfseries}{\thechapter.0}{0.5em}{\uppercase}
+\titlespacing*{\chapter}{0pt}{0pt}{6pt}
+
+\titleformat{\section}[block]
+{\normalfont\fontsize{12}{10}\bfseries}{\thesection}{0.5em}{}
+\titlespacing{\section}{0pt}{10pt}{0pt}
+
+\titleformat{\subsection}[hang]
+{\normalfont\fontsize{12}{0}\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\thesubsection}{10pt}{0pt}{0pt}
+
+\titleformat{\subsubsection}[hang]
+{\normalfont\fontsize{12}{0}\itshape}{}{0.5em}{}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+
+
+%%
+%MACROS
+\newcommand{\fig}[3]{
+\begin{figure}[!htb]
+	%\center{\includegraphics[width=\columnwidth]
+	%{figures/#1.png}}
+	\caption{\label{fig:#2} #3}
+\end{figure}
+}
+%
+%%
+
+\hyphenation{words}
+%
+%%
+
+\graphicspath{ {figures/} }
+\begin{document}
+	%\sloppy
+	\pagenumbering{roman}
+	\input{chapters/titlepage}
+
+	\includepdf{introductoryLetter/introLetter}
+	
+	\addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}
+	\chapter*{acknowledgments}
+	\input{chapters/acknowledgments}
+	\newpage
+	
+	\addcontentsline{toc}{chapter}{ABSTRACT}
+	\chapter*{abstract}
+	\input{chapters/abstract}
+	
+	
+	\tableofcontents
+	\listoffigures
+	
+	
+	
+	\chapter{INTRODUCTION}
+	\pagenumbering{arabic}
+	\input{chapters/introduction}
+	
+	\chapter{Literature Review}
+	\input{chapters/literature}
+	
+	\chapter{BACKGROUND}
+	\input{chapters/background}
+	
+	\chapter{METHODOLOGY}
+	\input{chapters/methodology}
+	
+	\chapter{RESULTS}
+	\input{chapters/results}
+	
+	\chapter{CONCLUSION}
+	\input{chapters/conclusion}
+	
+	\appendix
+	\chapter{appendix 1}
+	\input{appendices/appendix}
+	
+	\bibliography{FYP_references}
+	\bibliographystyle{IEEEtr}
+\end{document}
+
