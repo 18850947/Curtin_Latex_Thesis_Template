@@ -20,12 +20,12 @@ This repo contains only the "thesis_main.tex" file, as this file contains all th
  
  5. save your figures to the figures folder as you go. 
  
-### Updating versions
+#### Updating versions
 If you already have the file implemented you can update it to the desired version by simply changing the preamble to that of the desired version.
 
 **Updates that require other code changes will be made clear in the readMe** so make sure to check before updating.
 
-### references
+## references
 It is recomended to use bibTex to handle references. The template is setup to use IEEE referencing style, however this is not the style that The university requests. make sure to get 
 permission from your supervisor to use IEEE if you want to use it. Changing Referencing styles is untested.
 
@@ -51,10 +51,10 @@ Where # is a number. You can uncompile word document Endnote references from the
 
 This holds true over multiple word documents that use the same endnote library.
 
-### Issues
+## Issues
 Feel free to message someone or open a ticket if you encounter any issues or notice any changes that need to be made
 
-### Updates
+## Updates
 If you fix any issues feel free to push to a branch under your student id/name
 
 ## TODO:
