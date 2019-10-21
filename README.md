@@ -51,16 +51,16 @@ Where # is a number. You can uncompile word document Endnote references from the
 
 This holds true over multiple word documents that use the same endnote library.
 
-### figures
-A shortcut command for inputing figures has also been implemented. this doesn't overwrite the inbuilt figures environment/
+## Figures
+A shortcut command for inputing basic figures has also been implemented. this doesn't overwrite the inbuilt figures environment. The figure is implemented according the parameters set in the command definition (in the preamble, and free to change) just note it will effect all figures implemented this way equally.
 
-to use: 
+To use: 
 
 ```
 \fig{filename}{label}{title}
 ```
 
-as opposed to starting an environment, captioning, ect. The only thing with this method is the label doesn't appear when you use \ref, as it is not put in until compile time.
+As opposed to starting an environment, captioning, ect. The only thing with this method is the label doesn't appear when you use \ref, as it is not put in until compile time.
 
 
 ## Issues
