@@ -35,7 +35,7 @@ To use bibTex do the following:
 3. press F8 to compile the bibliography file
 4. press F5 to compile the main document
 
-If you were previously using Endnote, it can be exported to a bibTex .bib file by following [this link](https://www.rhizobia.co.nz/latex/convert)
+If you were previously using Endnote, it can be exported to a bibTex .bib file by following [this link](https://www.reed.edu/cis/help/LaTeX/EndNote.html)
 which can be used directly in the in above steps in place of (1.)
 
 To then reference in text, use the 
