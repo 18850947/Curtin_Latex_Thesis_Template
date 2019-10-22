@@ -4,70 +4,76 @@
 %
 %%
 
-\usepackage[final]{pdfpages}
-\usepackage[utf8]{inputenc}
-
-
-\usepackage{amsmath,amssymb,amsfonts}
 
 %%
 %packages
+\usepackage[final]{pdfpages}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
 \usepackage{caption, subcaption}
 \usepackage{afterpage}
 \usepackage{times}
 \usepackage{cite}
-\newcommand\aftercontents{%
-	\null
-	\pagenumbering{arabic}
-	\setcounter{page}{1}
-	\newpage}
+\usepackage{multirow}
+\usepackage{geometry}
+\usepackage{titlesec}
 %
 %%
+
+
 \setlength{\parindent}{0em}
 \setlength{\parskip}{1em}
 \renewcommand{\baselinestretch}{1.5}
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
 %%
 %Set margins
-\usepackage{geometry}
 \geometry{a4paper, inner = 40mm, outer = 25mm, top = 35mm, bottom = 35mm}
-%\hyphenpenalty= 10000000
-
 %
 %%
-\usepackage{titlesec}
+
+%%
+%hyphens
+%\hyphenpenalty= 10000000
+%
+%%
+
+%%
+%Format Headings
+%chapter heading
 
 \titleformat{\chapter}[hang]
-{\normalfont\fontsize{12}{0}\bfseries}{\thechapter.0}{0.5em}{\uppercase}
-\titlespacing*{\chapter}{0pt}{0pt}{6pt}
+%{12pt font, bolded}{starts with the chapter number}{no blank line beneath}{forced uppercase}
+{\normalfont\fontsize{12}{0}\bfseries}{\thechapter.}{0.5em}{\uppercase}
+%{distance between heading and label}{verticle space to text}{}
+\titlespacing*{\chapter}{0pt}{6pt}{0pt}
 
 \titleformat{\section}[block]
 {\normalfont\fontsize{12}{10}\bfseries}{\thesection}{0.5em}{}
-\titlespacing{\section}{0pt}{10pt}{0pt}
+\titlespacing{\section}{0pt}{6pt}{0pt}
 
 \titleformat{\subsection}[hang]
 {\normalfont\fontsize{12}{0}\bfseries}{\thesubsection}{0.5em}{}
-\titlespacing*{\thesubsection}{10pt}{0pt}{0pt}
+\titlespacing*{\thesubsection}{0pt}{6pt}{0pt}
 
 \titleformat{\subsubsection}[hang]
-{\normalfont\fontsize{12}{0}\itshape}{}{0.5em}{}
-\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
-
+{\normalfont\fontsize{12}{0}\itshape}{}{}{}
+\titlespacing{\subsubsection}{0pt}{6pt}{0pt}
+%
+%%
 
 %%
 %MACROS
 \newcommand{\fig}[3]{
 \begin{figure}[!htb]
-	%\center{\includegraphics[width=\columnwidth]
-	%{figures/#1.png}}
+	%\center{\includegraphics[width=\columnwidth]{figures/#1.png}}
 	\caption{\label{fig:#2} #3}
 \end{figure}
 }
 %
 %%
 
-\hyphenation{words}
+
 %
 %%
 
@@ -76,8 +82,8 @@
 	%\sloppy
 	\pagenumbering{roman}
 	\input{chapters/titlepage}
-
-	\includepdf{introductoryLetter/introLetter}
+	
+	
 	
 	\addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}
 	\chapter*{acknowledgments}
@@ -117,7 +123,7 @@
 	\chapter{appendix 1}
 	\input{appendices/appendix}
 	
-	\bibliography{FYP_references}
-	\bibliographystyle{IEEEtr}
+	%\bibliography{FYP_references}
+	%\bibliographystyle{IEEEtr}
 \end{document}
 

@@ -1,0 +1,9 @@
+\contentsline {chapter}{ACKNOWLEDGMENTS}{ii}% 
+\contentsline {chapter}{ABSTRACT}{iv}% 
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}% 
+\contentsline {chapter}{\numberline {2}Literature Review}{3}% 
+\contentsline {chapter}{\numberline {3}BACKGROUND}{5}% 
+\contentsline {chapter}{\numberline {4}METHODOLOGY}{7}% 
+\contentsline {chapter}{\numberline {5}RESULTS}{9}% 
+\contentsline {chapter}{\numberline {6}CONCLUSION}{11}% 
+\contentsline {chapter}{\numberline {A}appendix 1}{13}% 
