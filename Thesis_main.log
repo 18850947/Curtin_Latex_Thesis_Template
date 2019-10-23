@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.26)  22 OCT 2019 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.26)  24 OCT 2019 07:34
 entering extended mode
 **./Thesis_main.tex
 (Thesis_main.tex
@@ -290,22 +290,48 @@ Package: titlesec 2019/09/09 v2.12 Sectioning titles
 \titlewidth=\dimen136
 \titlewidthlast=\dimen137
 \titlewidthfirst=\dimen138
+)
+("C:\Users\freo_\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titletoc.
+sty"
+Package: titletoc 2019/09/09 v2.12 TOC entries
+\ttl@leftsep=\dimen139
+)
+("C:\Users\freo_\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
+sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen140
+\lightrulewidth=\dimen141
+\cmidrulewidth=\dimen142
+\belowrulesep=\dimen143
+\belowbottomsep=\dimen144
+\aboverulesep=\dimen145
+\abovetopsep=\dimen146
+\cmidrulesep=\dimen147
+\cmidrulekern=\dimen148
+\defaultaddspace=\dimen149
+\@cmidla=\count113
+\@cmidlb=\count114
+\@aboverulesep=\dimen150
+\@belowrulesep=\dimen151
+\@thisruleclass=\count115
+\@lastruleclass=\count116
+\@thisrulewidth=\dimen152
 ) (Thesis_main.aux)
 \openout1 = `Thesis_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 99.
 
 ("C:\Users\freo_\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -315,16 +341,16 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ("C:\Users\freo_\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen139
+\scratchcounter=\count117
+\scratchdimen=\dimen153
 \scratchbox=\box35
-\nofMPsegments=\count114
-\nofMParguments=\count115
+\nofMPsegments=\count118
+\nofMParguments=\count119
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen140
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen154
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks28
 )
 ("C:\Users\freo_\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
@@ -425,24 +451,31 @@ Package caption Info: End \AtBeginDocument code.
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
  (chapters/acknowledgments.tex) [3] [4
 
 ]
-(chapters/abstract.tex) [5] [6
+(chapters/Preface.tex) [5] [6
+
+] (chapters/abstract.tex) [7] [8
 
 ] (Thesis_main.toc)
 \tf@toc=\write3
 \openout3 = `Thesis_main.toc'.
 
- [7] [8
+ [9] [10
 
 ] (Thesis_main.lof)
 \tf@lof=\write4
 \openout4 = `Thesis_main.lof'.
 
+ [11] [12
 
-[9] [10
+] (Thesis_main.lot)
+\tf@lot=\write5
+\openout5 = `Thesis_main.lot'.
+
+ [13] [14
 
 ]
 Chapter 1.
@@ -470,23 +503,29 @@ Chapter 6.
 
 ]
 Appendix A.
-(appendices/appendix.tex) [13] (Thesis_main.aux) ) 
+(appendices/appendix.tex) (Thesis_main.bbl [13] [14
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [15] (Thesis_main.aux) ) 
 Here is how much of TeX's memory you used:
- 5790 strings out of 492895
- 87289 string characters out of 3123735
- 164747 words of memory out of 3000000
- 9581 multiletter control sequences out of 15000+200000
+ 6037 strings out of 492895
+ 90387 string characters out of 3123735
+ 168523 words of memory out of 3000000
+ 9812 multiletter control sequences out of 15000+200000
  8833 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,39p,280b,140s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/freo_/AppData/Local
-/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/freo_/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/freo_/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/freo_/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis_main.pdf (23 pages, 48335 bytes).
+{C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/enc/dvips/base/8r.enc}<C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/urw/times/utmb8a.pfb><C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/urw/times/utmr8a.pfb><C:/Users/freo_/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Thesis_main.pdf (29 pages, 52267 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

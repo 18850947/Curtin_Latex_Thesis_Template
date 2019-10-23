@@ -52,23 +52,23 @@
 %Format Headings
 %chapter heading
 
-\titleformat{\chapter}[hang]
+\titleformat{\chapter}[block]
 %{12pt font, bolded}{starts with the chapter number}{no blank line beneath}{forced uppercase}
-{\normalfont\fontsize{12}{0}\bfseries}{\thechapter.}{0.5em}{\uppercase}
+{\normalfont\fontsize{12}{0}\bfseries}{\thechapter.}{12pt}{\uppercase}
 %{distance between heading and label}{verticle space to text}{}
-\titlespacing*{\chapter}{0pt}{6pt}{0pt}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
 
 \titleformat{\section}[block]
-{\normalfont\fontsize{12}{10}\bfseries}{\thesection}{0.5em}{}
-\titlespacing{\section}{0pt}{6pt}{0pt}
+{\normalfont\fontsize{12}{10}\bfseries}{\thesection}{12pt}{}
+\titlespacing*{\section}{0pt}{0pt}{-10pt}
 
-\titleformat{\subsection}[hang]
-{\normalfont\fontsize{12}{0}\bfseries}{\thesubsection}{0.5em}{}
-\titlespacing{\thesubsection}{0pt}{0pt}{0pt}
+\titleformat{\subsection}[block]
+{\normalfont\fontsize{12}{10}\bfseries}{\thesubsection}{12pt}{}
+\titlespacing*{\subsection}{0pt}{0pt}{-10pt}
 
-\titleformat{\subsubsection}[hang]
-{\normalfont\fontsize{12}{0}\itshape}{}{}{}
-\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+\titleformat{\subsubsection}[block]
+{\normalfont\fontsize{12}{10}\itshape}{}{12pt}{}
+\titlespacing*{\subsubsection}{0pt}{0pt}{-10pt}
 %
 %%
 
