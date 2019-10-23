@@ -16,18 +16,27 @@
 \usepackage{times}
 \usepackage{cite}
 \usepackage{multirow}
-\usepackage{geometry}
+\usepackage[showframe]{geometry}
 \usepackage{titlesec}
+\usepackage{titletoc}
 %
 %%
 
-
+%No paragraph indent if using a paraskip
 \setlength{\parindent}{0em}
+
+%skip 1 line between paragraphs
 \setlength{\parskip}{1em}
+
+%this approximate stretching the line spacing a factor of 1.5, which is close enough to what it should be (slighly less)
+%effects all the of the headings, including those in the ToC and LoF, which isnt ideal.
 \renewcommand{\baselinestretch}{1.5}
+
+%Change contents page title.
 \renewcommand{\contentsname}{TABLE OF CONTENTS}
+
 %%
-%Set margins
+%Set margins and paper size
 \geometry{a4paper, inner = 40mm, outer = 25mm, top = 35mm, bottom = 35mm}
 %
 %%
@@ -59,61 +68,66 @@
 \titleformat{\subsubsection}[hang]
 {\normalfont\fontsize{12}{0}\itshape}{}{}{}
 \titlespacing{\subsubsection}{0pt}{6pt}{0pt}
+
+\titlecontents{chapter}[0pt]{\vspace{-\parskip}}{\thecontentslabel.0 }{}{\mdseries\titlerule*[0.35em]{.}\thepage}[]
+\titlecontents{section}[12pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.5em]{.}\thepage}[]
+\titlecontents{subsection}[24pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.75em]{.}\thepage}[]
+\titlecontents{figure}[0pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.75em]{.}\thepage}[]
 %
 %%
 
 %%
+
 %MACROS
+%\fig command. Uncomment the %center line when ready to compile
+%technically untested
 \newcommand{\fig}[3]{
-\begin{figure}[!htb]
-	%\center{\includegraphics[width=\columnwidth]{figures/#1.png}}
-	\caption{\label{fig:#2} #3}
-\end{figure}
+	\begin{figure}[!htb]
+		%\center{\includegraphics[width=\columnwidth]{figures/#1.png}}
+		\caption{\label{fig:#2} #3}
+	\end{figure}
 }
 %
 %%
 
-
-%
-%%
-
-\graphicspath{ {figures/} }
 \begin{document}
-	%\sloppy
+	%first pages are numbered using roman numerals
 	\pagenumbering{roman}
 	\input{chapters/titlepage}
 	
+	%depreciated, use the float template
+	%\includepdf{introductoryLetter/introLetter}
 	
-	
-	\addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}
+	%add Acknowledgements and Abstract to ToC
+	\addcontentsline{toc}{chapter}{Acknowledgments}
 	\chapter*{acknowledgments}
 	\input{chapters/acknowledgments}
 	\newpage
 	
-	\addcontentsline{toc}{chapter}{ABSTRACT}
+	\addcontentsline{toc}{chapter}{Abstract}
 	\chapter*{abstract}
 	\input{chapters/abstract}
 	
 	
+	%need to be formatted
 	\tableofcontents
 	\listoffigures
 	
-	
-	
-	\chapter{INTRODUCTION}
+	%\chapter is the heading, the input{chapters/XX is the file}
+	\chapter{Introduction}
 	\pagenumbering{arabic}
 	\input{chapters/introduction}
 	
 	\chapter{Literature Review}
 	\input{chapters/literature}
 	
-	\chapter{BACKGROUND}
+	\chapter{Background}
 	\input{chapters/background}
 	
-	\chapter{METHODOLOGY}
+	\chapter{Methodology}
 	\input{chapters/methodology}
 	
-	\chapter{RESULTS}
+	\chapter{Results}
 	\input{chapters/results}
 	
 	\chapter{CONCLUSION}
@@ -123,7 +137,7 @@
 	\chapter{appendix 1}
 	\input{appendices/appendix}
 	
-	%\bibliography{FYP_references}
-	%\bibliographystyle{IEEEtr}
+	\bibliography{FYP_references}
+	\bibliographystyle{IEEEtr}
 \end{document}
 
