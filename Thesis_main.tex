@@ -16,9 +16,10 @@
 \usepackage{times}
 \usepackage{cite}
 \usepackage{multirow}
-\usepackage[showframe]{geometry}
+\usepackage{geometry}
 \usepackage{titlesec}
 \usepackage{titletoc}
+\usepackage{booktabs}
 %
 %%
 
@@ -63,16 +64,21 @@
 
 \titleformat{\subsection}[hang]
 {\normalfont\fontsize{12}{0}\bfseries}{\thesubsection}{0.5em}{}
-\titlespacing*{\thesubsection}{0pt}{6pt}{0pt}
+\titlespacing{\thesubsection}{0pt}{0pt}{0pt}
 
 \titleformat{\subsubsection}[hang]
 {\normalfont\fontsize{12}{0}\itshape}{}{}{}
-\titlespacing{\subsubsection}{0pt}{6pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+%
+%%
 
-\titlecontents{chapter}[0pt]{\vspace{-\parskip}}{\thecontentslabel.0 }{}{\mdseries\titlerule*[0.35em]{.}\thepage}[]
-\titlecontents{section}[12pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.5em]{.}\thepage}[]
-\titlecontents{subsection}[24pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.75em]{.}\thepage}[]
-\titlecontents{figure}[0pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.75em]{.}\thepage}[]
+%%
+%ToC, LoF, LoT Formattig
+\titlecontents{chapter}[0pt]{\vspace{-\parskip}}{\thecontentslabel.0 }{}{\mdseries\titlerule*[0.35em]{.}\thecontentspage}[]
+\titlecontents{section}[12pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.5em]{.}\thecontentspage}[]
+\titlecontents{subsection}[24pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.75em]{.}\thecontentspage}[]
+\titlecontents{table}[0pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.75em]{.}\thecontentspage}[]
+\titlecontents{figure}[0pt]{\vspace{-\parskip}}{\thecontentslabel. }{}{\mdseries\titlerule*[0.75em]{.}\thecontentspage}[]
 %
 %%
 
@@ -81,10 +87,10 @@
 %MACROS
 %\fig command. Uncomment the %center line when ready to compile
 %technically untested
-\newcommand{\fig}[3]{
+\newcommand{\fig}[4]{
 	\begin{figure}[!htb]
 		%\center{\includegraphics[width=\columnwidth]{figures/#1.png}}
-		\caption{\label{fig:#2} #3}
+		\caption[#4]{\label{fig:#2} #3}
 	\end{figure}
 }
 %
@@ -100,18 +106,21 @@
 	
 	%add Acknowledgements and Abstract to ToC
 	\addcontentsline{toc}{chapter}{Acknowledgments}
-	\chapter*{acknowledgments}
+	\chapter*{Acknowledgments}
 	\input{chapters/acknowledgments}
 	\newpage
 	
+	\addcontentsline{toc}{chapter}{Preface}
+	\chapter*{Preface}
+	\input{chapters/Preface}
+	
 	\addcontentsline{toc}{chapter}{Abstract}
-	\chapter*{abstract}
+	\chapter*{Abstract}
 	\input{chapters/abstract}
 	
-	
-	%need to be formatted
 	\tableofcontents
 	\listoffigures
+	\listoftables
 	
 	%\chapter is the heading, the input{chapters/XX is the file}
 	\chapter{Introduction}
@@ -137,6 +146,7 @@
 	\chapter{appendix 1}
 	\input{appendices/appendix}
 	
+	\addcontentsline{toc}{chapter}{Bibliography}
 	\bibliography{FYP_references}
 	\bibliographystyle{IEEEtr}
 \end{document}
