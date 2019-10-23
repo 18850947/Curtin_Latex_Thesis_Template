@@ -1,0 +1,4 @@
+\standalonepreambles
+\subpreamble{chapters/introductionLetter.tex}
+\usepackage [subpreambles=true]{standalone}\signature {Hayden Davis}\address {160 Cumming Road \\ Oakford \\ WA 6121}\begin {introductionletter}
+\endstandalonepreambles

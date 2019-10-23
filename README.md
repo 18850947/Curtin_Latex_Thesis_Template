@@ -6,19 +6,13 @@ This repo contains only the "thesis_main.tex" file, as this file contains all th
  ## Tips for Use
  ### basic use
  #### First time
- 1. create an folder called Thesis_Latex (or whatever you want to name it)
- within this folder make a folder called figures, and another called chapters, ie
- > Thesis_latex
- >  - figures
- >  - chapters
+ 1. clone a zip of the repository and extract in the desired location
  
- 2. create a blank .tex file and save it in the folder.
+ 2. run the file Thesis_main.tex in your prefered latex editor
  
- 3. copy/paste the code from the desired version on the repo into the empty .tex file.
+ 3. you should have the option to automatically create the relevant chapter .tex files, which will appear in the thesis_latex/chapters directory
  
- 4. now you should have the option to automatically create the relevant chapter .tex files, which will appear in the thesis_latex/chapters directory
- 
- 5. save your figures to the figures folder as you go. 
+ 4. save your figures to the figures folder as you go. 
  
 #### Updating versions
 If you already have the file implemented you can update it to the desired version by simply changing the preamble to that of the desired version.
@@ -70,9 +64,9 @@ Feel free to message someone or open a ticket if you encounter any issues or not
 If you fix any issues feel free to push to a branch under your student id/name
 
 ## TODO:
-  - [ ] ToC Formatting
+  - [x] ToC Formatting
   - [ ] Fix line hyphenation (properly)
-  - [ ] Regulate line spacing to just text
+  - [x] Regulate line spacing to just text
         - ie: remove the massive line spacing in LoF and ToC
   - [ ] format bibliography
   - [ ] input letter template
