@@ -1,7 +1,10 @@
 # Curtin Latex Thesis Template
 ###### A repository to keep up to date with changes made to the latex template that is flying around for curtin undergrads.
 
-This repo contains only the "thesis_main.tex" file, as this file contains all the formatting neccesary. The chapters can be edited to suit your requirements and will reflect in the ToC. 
+This repo contains contents of the folder "thesis_latex" folder.
+document formatting is in the thesis_template.tex file, and chapters are contained within the chapter folder
+
+titlepage.tex and letter.tex are templates, all others are blank.
 
  ## Tips for Use
  ### basic use
@@ -25,7 +28,7 @@ permission from your supervisor to use IEEE if you want to use it. Changing Refe
 
 To use bibTex do the following:
 1. Create a .bib file and fill this with bibTex formatted references.
-2. Change line 120 to \bibliography{name_of_the_bib_file}
+2. Change the line to \bibliography{name_of_the_bib_file}
 3. press F8 to compile the bibliography file
 4. press F5 to compile the main document
 
@@ -51,11 +54,12 @@ A shortcut command for inputing basic figures has also been implemented. this do
 To use: 
 
 ```
-\fig{filename}{label}{title}
+\fig{filename}{label}{title}{title in contents}
 ```
 
 As opposed to starting an environment, captioning, ect. The only thing with this method is the label doesn't appear when you use \ref, as it is not put in until compile time.
 
+title in contents is how it will appear in the LoF, and title is how it appears in text
 
 ## Issues
 Feel free to message someone or open a ticket if you encounter any issues or notice any changes that need to be made
@@ -69,7 +73,8 @@ If you fix any issues feel free to push to a branch under your student id/name
   - [x] Regulate line spacing to just text
         - ie: remove the massive line spacing in LoF and ToC
   - [ ] format bibliography
-  - [ ] input letter template
+  - [x] input letter template
+  - [ ] change figure and table numbering to absolute
   
 ## Use
 - Available for free use by anyone without any acknowledgement required

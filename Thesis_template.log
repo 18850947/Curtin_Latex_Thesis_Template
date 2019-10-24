@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.26)  24 OCT 2019 07:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.26)  24 OCT 2019 16:47
 entering extended mode
-**./Thesis_main.tex
-(Thesis_main.tex
+**./Thesis_template.tex
+(Thesis_template.tex
 LaTeX2e <2018-12-01>
 ("C:\Users\freo_\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
 Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
@@ -316,8 +316,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count115
 \@lastruleclass=\count116
 \@thisrulewidth=\dimen152
-) (Thesis_main.aux)
-\openout1 = `Thesis_main.aux'.
+) (Thesis_template.aux)
+\openout1 = `Thesis_template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
@@ -418,7 +418,7 @@ Package caption Info: End \AtBeginDocument code.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: twoside showframe 
 * h-part:(L,W,R)=(113.81102pt, 412.56497pt, 71.13188pt)
 * v-part:(T,H,B)=(99.58464pt, 645.87756pt, 99.58464pt)
 * \paperwidth=597.50787pt
@@ -451,31 +451,34 @@ Package caption Info: End \AtBeginDocument code.
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
- (chapters/acknowledgments.tex) [3] [4
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 107.
+ (chapters/letter.tex) [3] [4
+
+] (chapters/acknowledgments.tex) [5] [6
+
+] (chapters/Preface.tex) [7] [8
+
+] (chapters/abstract.tex) [9] [10
 
 ]
-(chapters/Preface.tex) [5] [6
-
-] (chapters/abstract.tex) [7] [8
-
-] (Thesis_main.toc)
+(Thesis_template.toc)
 \tf@toc=\write3
-\openout3 = `Thesis_main.toc'.
-
- [9] [10
-
-] (Thesis_main.lof)
-\tf@lof=\write4
-\openout4 = `Thesis_main.lof'.
+\openout3 = `Thesis_template.toc'.
 
  [11] [12
 
-] (Thesis_main.lot)
-\tf@lot=\write5
-\openout5 = `Thesis_main.lot'.
+] (Thesis_template.lof)
+\tf@lof=\write4
+\openout4 = `Thesis_template.lof'.
 
  [13] [14
+
+]
+(Thesis_template.lot)
+\tf@lot=\write5
+\openout5 = `Thesis_template.lot'.
+
+ [15] [16
 
 ]
 Chapter 1.
@@ -503,29 +506,29 @@ Chapter 6.
 
 ]
 Appendix A.
-(appendices/appendix.tex) (Thesis_main.bbl [13] [14
+(appendices/appendix.tex) (Thesis_template.bbl [13] [14
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [15] (Thesis_main.aux) ) 
+) [15] (Thesis_template.aux) ) 
 Here is how much of TeX's memory you used:
- 6037 strings out of 492895
- 90387 string characters out of 3123735
- 168523 words of memory out of 3000000
- 9812 multiletter control sequences out of 15000+200000
+ 5974 strings out of 492895
+ 90150 string characters out of 3123735
+ 169277 words of memory out of 3000000
+ 9746 multiletter control sequences out of 15000+200000
  8833 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,39p,280b,140s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/enc/dvips/base/8r.enc}<C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/urw/times/utmr8a.pfb><C:/Users/freo_/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Thesis_main.pdf (29 pages, 52267 bytes).
+ 41i,6n,39p,284b,140s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9
+/fonts/enc/dvips/base/8r.enc}<C:/Users/freo_/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/urw/times/utmb8a.pfb><C:/Users/freo_/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/freo_/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Thesis_template.pdf (31 pages, 59191 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
