@@ -7,6 +7,7 @@
 
 %%
 %packages
+\usepackage{xargs}
 \usepackage[final]{pdfpages}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -87,12 +88,17 @@
 %MACROS
 %\fig command. Uncomment the %center line when ready to compile
 %technically untested
-\newcommand{\fig}[4]{
+
+
+
+\newcommandx{\fig}[5][5 = 0.5]{
 	\begin{figure}[!htb]
-		%\center{\includegraphics[width=\columnwidth]{figures/#1.png}}
+		\centering{\includegraphics[width=#5\textwidth]{figures/#1}}
 		\caption[#4]{\label{fig:#2} #3}
 	\end{figure}
+	\vspace{-\parskip}
 }
+
 %
 %%
 
@@ -142,7 +148,7 @@
 	\chapter{Results}
 	\input{chapters/results}
 	
-	\chapter{CONCLUSION}
+	\chapter{Conclusion}
 	\input{chapters/conclusion}
 	
 	\appendix
@@ -150,7 +156,7 @@
 	\input{appendices/appendix}
 	
 	\addcontentsline{toc}{chapter}{Bibliography}
-	\bibliography{FYP_references}
+	\bibliography{FYP_references}{}
 	\bibliographystyle{IEEEtr}
 \end{document}
 
