@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{DBLP:journals/corr/abs-1811-09595}
+B.~Knyazev, X.~Lin, M.~R. Amer, and G.~W. Taylor, ``Spectral multigraph
+  networks for discovering and fusing relationships in molecules,'' {\em CoRR},
+  vol.~abs/1811.09595, 2018.
+
+\bibitem{haug15}
+S.~Haug and J.~Ostermann, ``A crop/weed field image dataset for the evaluation
+  of computer vision based precision agriculture tasks,'' in {\em Computer
+  Vision - ECCV 2014 Workshops}, pp.~105--116, 2015.
+
+\end{thebibliography}

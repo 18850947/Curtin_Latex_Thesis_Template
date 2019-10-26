@@ -1,7 +1,0 @@
-﻿@misc{RN52,
-   volume = {2019},
-   number = {13/04},
-   url = {http://matlab.izmiran.ru/help/toolbox/images/enhanc15.html},
-   type = {Web Page}
-}
-
