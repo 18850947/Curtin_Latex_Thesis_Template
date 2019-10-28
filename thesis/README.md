@@ -69,7 +69,7 @@ If you fix any issues feel free to push to a branch under your student id/name
 
 ## TODO:
   - [x] ToC Formatting
-  - [ ] Fix line hyphenation (properly)
+  - [x] Fix line hyphenation (properly)
   - [x] Regulate line spacing to just text
         - ie: remove the massive line spacing in LoF and ToC
   - [ ] format bibliography
