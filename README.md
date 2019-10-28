@@ -1,6 +1,6 @@
 # Curtin Latex Thesis Template
 ###### A repository to keep up to date with changes made to the latex template that is flying around for curtin undergrads.
-
+# This Branch is depreciated: use master branch
 This repo contains contents of the folder "thesis_latex" folder.
 document formatting is in the thesis_template.tex file, and chapters are contained within the chapter folder
 
